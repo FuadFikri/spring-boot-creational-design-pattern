@@ -14,3 +14,9 @@
     - Jika singleton object bersifat muttable, maka bisa saja terjadi race condition. Perlu hati-hati untuk menerapkan singleton object yang mutable. 
     
 
+### Prototype
+    - Saat kita memiliki sebuah class yang jenis objectnya banyak kesamaan, maka sangat cocok menggunakan prototype pattern
+    - Dengan prototype pattern, kita bisa membuat object dari prototype bean yang sudah kita deklarasikan
+    - Hati-hati ketika membuat bean dari prototype, karena secara otomatis object akan selalu dibuat baru oleh Spring
+    - Di Spring, kita bisa ubah scope bean dari singleton menjadi prototype. Saat kita ubah menjadi prototype, secara otomatis object akan selalu dibuat baru sesuai dengan deklarasi yang ada di bean
+
