@@ -11,6 +11,6 @@
     - kita bisa juga membuat object bean menjadi lazy(hanya dibuat ketika pertama kali dibutuhkan)
     - jika objectnya berat, seperti koneksi db, http client, disarankan membuat singleton eager
     - Pastikan singleton object bersifat immutable
-    - Jika singleton object bersifat muttable, maka bisa saja terjadi race condition
+    - Jika singleton object bersifat muttable, maka bisa saja terjadi race condition. Perlu hati-hati untuk menerapkan singleton object yang mutable. 
     
 
