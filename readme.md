@@ -20,3 +20,7 @@
     - Hati-hati ketika membuat bean dari prototype, karena secara otomatis object akan selalu dibuat baru oleh Spring
     - Di Spring, kita bisa ubah scope bean dari singleton menjadi prototype. Saat kita ubah menjadi prototype, secara otomatis object akan selalu dibuat baru sesuai dengan deklarasi yang ada di bean
 
+### Builder
+    - The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders
+    - Dengan menggunakan library Lombok, kita bisa membuat builder class hanya dengan annotation @Builder pada class complex nya
+    - 
