@@ -28,4 +28,15 @@ class FactoryAppTest {
         System.out.println(twitter);
         System.out.println(instagram);
     }
+
+    @Test
+    public void testFactoryInheritance(){
+        SocialMedia fb =applicationContext.getBean("socialMediaFacebook",SocialMedia.class);
+        SocialMedia twitter  =applicationContext.getBean("socialMediaTwitter",SocialMedia.class);
+        SocialMedia instagram  =applicationContext.getBean("socialMediaInstagram",SocialMedia.class);
+
+        System.out.println(fb);
+        System.out.println(twitter);
+        System.out.println(instagram);
+    }
 }
